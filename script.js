@@ -1,41 +1,60 @@
-// ukol 1
-let first = document.getElementById("first")
-first.addEventListener("click", function(){
-    alert("vyskocil alert")  
+//ukol 1
+let first = document.getElementById('first')
+
+first.addEventListener('click', function(){
+    alert("ahoj tady alert")
 })
-// ukol 2
-let second = document.getElementById("second")
-second.addEventListener("click", function(){
- second.textContent = ("jiny text");
+//ukol 2
+const second = document.getElementById('second')
+
+second.addEventListener('click', function(){
+    second.textContent = "jiny text"
 })
- 
 //ukol 3
-const button = document.getElementById('changeTextButton');
-const text = document.getElementById('text');
-button.addEventListener('click', function() {
-    text.textContent = "text zmenen";
-});
-// ukol 4
-var showHide = document.getElementById("showHide");
-var demo = document.getElementById("demo");
-showHide.onclick = function() {
-  if (demo.style.display == "block") {
-    demo.style.display = "none";
-  } else {
-    demo.style.display = "block";
-  }
+const third = document.getElementById('third')
+
+third.addEventListener('click', function(){
+    var paragraph = document.getElementById("three");
+    paragraph.textContent = "tady text";
+})
+//ukol 4
+    
+const fourth = document.getElementById('fourth')
+
+fourth.addEventListener('click', function(){
+    var paragraph = document.getElementById("four");
+    paragraph.textContent = "text se objevil";
+})
+//ukol 5
+function hellouser(){
+    let user = document.getElementById('user').value;
+    alert('vitej na webu ' + user)
 }
-// ukol 5
-function sayHello() {
-    const name = document.getElementById('nameInput').value;
-    if(name) {
-        alert(`Ahoj, ${name}!`);
-    } else {
-        alert("Prosím, zadejte své jméno.");
-    }
-}
+//ukol 7
+const seven = document.getElementById("seven")
 
+seven.addEventListener("mouseover", () => {
+  seven.textContent = "tu text"
+})
 
+seven.addEventListener("mouseout", () => {
+  seven.textContent = "puvodni text text";
+})
+//ukol 8
+const eithth = document.getElementById('eighth');
+const eight = document.getElementById('eight');
 
-// ukol 6
+eighth.addEventListener('click', () => {
+  const now = new Date();
+  const formattedTime = now.toLocaleString(); 
+  eight.textContent = formattedTime;
+})
+//ukol 9
+const tlacitko = document.getElementById("nineth");
+const nine = document.getElementById("nine");
 
+tlacitko.addEventListener("click", () => {
+  const dnes = new Date();
+  const formatovanyDatum = dnes.toLocaleDateString();
+  nine.textContent = formatovanyDatum;
+})
