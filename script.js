@@ -58,3 +58,14 @@ tlacitko.addEventListener("click", () => {
   const formatovanyDatum = dnes.toLocaleDateString();
   nine.textContent = formatovanyDatum;
 })
+//-----------------DWS 2----------------------------------------
+// ukol 2
+
+//ukol 3
+function additiongo(){
+  let addition = document.getElementById("addition").value;
+  addition = number(addition);
+  let go = addition+3;
+  document.getElementById("finaladdition").textContent = "vysledek souctu" +3
+}
+//ukol 4 
