@@ -62,10 +62,23 @@ tlacitko.addEventListener("click", () => {
 // ukol 2
 
 //ukol 3
-function additiongo(){
-  let addition = document.getElementById("addition").value;
-  addition = number(addition);
-  let go = addition+3;
-  document.getElementById("finaladdition").textContent = "vysledek souctu" +3
+function pridejTri() {
+  const cislo = document.getElementById('cislo').value;
+  const cisloInt = parseInt(cislo);
+  const vysledek = cisloInt + 3;
+  document.getElementById('vysledek').textContent = vysledek;
 }
-//ukol 4 
+//ukol 4
+function secticisla() {
+  const cislo1 = document.getElementById('cislo1').value;
+  const cislo2 = document.getElementById('cislo2').value;
+
+  const cislo1Int = parseInt(cislo1);
+  const cislo2Int = parseInt(cislo2);
+
+  const vysledek = cislo1Int + cislo2Int;
+
+  document.getElementById('vysledek').textContent = vysledek;
+}
+//ukol 5
+
